@@ -32,3 +32,5 @@ phoenix_slickgrid-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore auto-generated hook files
+/assets/js/_hooks/

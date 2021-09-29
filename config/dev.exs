@@ -45,13 +45,15 @@ config :phoenix_slickgrid, PhoenixSlickgridWeb.Endpoint,
 
 # Watch static and templates for browser reloading.
 config :phoenix_slickgrid, PhoenixSlickgridWeb.Endpoint,
+  reloadable_compilers: [:phoenix, :elixir, :surface],
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/phoenix_slickgrid_web/(live|views)/.*(ex)$",
       ~r"lib/phoenix_slickgrid_web/templates/.*(eex)$",
-      ~r"lib/phoenix_slickgrid_web/live/.*(sface)$"
+      ~r"lib/phoenix_slickgrid_web/live/.*(sface)$",
+      ~r"lib/my_app_web/(live|components)/.*(ex|js)$"
     ]
   ]
 
